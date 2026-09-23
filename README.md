@@ -50,4 +50,42 @@ A escolha do `while` foi adequada porque a quantidade de temperaturas que serão
 Para compilar o programa, utilize:
 
 ```bash
-gcc monitoramento.c -o monitoramento
+## 6. Testes realizados
+
+### Teste 1 — Validação de entrada inválida
+
+Foi informado um texto no lugar de uma temperatura numérica.
+
+O programa identificou a entrada como inválida, apresentou uma mensagem de erro e solicitou uma nova temperatura.
+
+**Resultado:** teste realizado com sucesso.
+
+### Teste 2 — Temperaturas acima do limite, mas não consecutivas
+
+Foi utilizado o limite de 30°C e foram informadas temperaturas acima e abaixo do limite.
+
+Quando uma temperatura ficou abaixo ou igual ao limite, o contador de temperaturas consecutivas foi zerado.
+
+**Resultado:** o programa não encerrou enquanto não ocorreram três temperaturas acima do limite consecutivamente.
+
+### Teste 3 — Três temperaturas consecutivas acima do limite
+
+Foi utilizado o limite de 30°C e foram informadas as temperaturas 31°C, 32°C e 33°C.
+
+As três temperaturas ficaram acima do limite e foram consecutivas.
+
+**Resultado:** o programa encerrou automaticamente e apresentou o relatório final.
+
+## 7. Evidências
+
+As evidências dos testes realizados estão na pasta `evidencias`.
+
+- `teste01.png` — validação de entrada inválida.
+- `teste02.png` — temperaturas acima do limite, mas não consecutivas.
+- `teste03.png` — três temperaturas consecutivas acima do limite.
+
+## 8. Reflexão final
+
+Eu escolhi usar o while porque eu não sabia quantas temperaturas seriam digitadas. Então, o programa continua pedindo as temperaturas até acontecer a condição de parar, que é quando aparecem três temperaturas acima do limite seguidas.
+
+Também percebi que é importante verificar a condição antes de continuar o while, porque assim o programa consegue saber quando deve continuar ou parar. Durante os testes, pude ver que quando uma temperatura fica abaixo do limite, a contagem das temperaturas consecutivas volta para zero.
