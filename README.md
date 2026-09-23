@@ -49,7 +49,7 @@ A escolha do `while` foi adequada porque a quantidade de temperaturas que serão
 
 Para compilar o programa, utilize:
 
-```bash
+
 ## 6. Testes realizados
 
 ### Teste 1 — Validação de entrada inválida
