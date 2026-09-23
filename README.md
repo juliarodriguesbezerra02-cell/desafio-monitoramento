@@ -47,7 +47,7 @@ A escolha do `while` foi adequada porque a quantidade de temperaturas que serão
 
 ## 5. Como executar
 
-Para compilar o programa, utilize:
+Para compilar o programa, utilizei:
 gcc monitoramento.c -o monitoramento
 e depois:
 ./monitoramento
